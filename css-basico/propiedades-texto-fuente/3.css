@@ -1,3 +1,16 @@
 p {
-    color: red
+    color: red;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    text-decoration: underline;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+span {
+    text-decoration: line-through;
+    color: blue;
 }
