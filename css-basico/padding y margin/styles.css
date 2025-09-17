@@ -1,0 +1,40 @@
+.formulario {
+    background: red;
+    /* -- Con solo poner padding 20px se aumenta el tamaño de todos en 20 sin necesidad de ponerlos todos */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.formulario_input {
+    padding: 20px;
+}
+.formulario2 {
+    background: blue;
+    /* si sigo poniendo los pixeles, se modifican en el sentido de las agujas del reloj */
+    padding: 20px 30px 60px 60px;
+}
+.formulario2_input {
+    padding: 20px;
+}
+/* Si solo pongo 2 valores, el primero es para arriba y el segundo para abajo
+Ej: padding: 20px 40px; */
+
+.formulario_submit2 {
+    /**/
+    background: yellow;
+    padding: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    width: 50%;
+}
+/* margin es el espacio que hay fuera del elemento, el margen que lo separa de otros elementos*/
+.formulario2 {
+    margin: 20px;
+}
+
+.box {
+    background: black;
+    padding: 10px;
+    margin :10px;
+}
