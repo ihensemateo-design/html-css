@@ -1,0 +1,28 @@
+.caja1{
+    color:black;
+    background-color: red;
+    width: 500px;
+    height: 200px;
+}
+.caja2{
+
+    color:black;
+    background-color: rgb(68, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+h1 {
+    background-color: blue;
+    height: 150px;
+}
+input {
+    background-color: green;
+    color: black;
+    width: 100px;
+    height: 100px;
+}
+form {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
