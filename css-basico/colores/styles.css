@@ -1,0 +1,31 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(red, green, blue);
+    margin: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgba(red, green, blue, alpha);
+    margin: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: hex #rrggbb;
+    margin: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: hsl(hue, saturation, lightness);
+    margin: 20px;
+}
+
+.box {
+    background: red;
+}
