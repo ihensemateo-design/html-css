@@ -1,0 +1,43 @@
+div {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+/*  Se suele poner todo en el mismo pero creo un nuevo div a efectos practicos */
+div {
+    border-color : black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+}
+/* Existe una sola propiedad que engloba las 3 anteriores */
+div {
+    border: 3px solid black;
+}
+/* Los bordes son a parte y existen varias formas de definirlos */
+div {
+    border-top: 3px;
+    border-left: 4px;
+    border-right: 5px;
+    border-bottom: 6px;
+}
+/* Tambien se pueden definir por separado */
+div {
+    border-top: 3px solid black;
+    border-left: 4px dashed blue;
+    border-right: 5px dotted green;
+    border-bottom: 6px double red;
+}
+/* Radios  especificos de los bordes */
+div {
+    border-top-left-radius: 20px solid black;
+    border-top-right-radius: 10px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+}
+/* Si quiero poner los 4 valores del border radius, afecta en diagonal, primero el de arriba a la izquierda, segundo derecha arriba, tercero derecha abajo y ultimo izqueirda abajo (agujas del rejoj) */
+
+div {
+    border-radius: 20px 10px 50px 30px;
+}

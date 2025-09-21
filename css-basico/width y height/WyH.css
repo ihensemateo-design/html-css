@@ -3,17 +3,21 @@
     background-color: red;
     width: 500px;
     height: 200px;
+    text-align: center;
 }
 .caja2{
-
     color:black;
-    background-color: rgb(68, 0, 255);
+    background-color: rgb(121, 97, 187);
     width: 100px;
     height: 100px;
+    padding: 20px 10px 30px 50px;
+    border: 20px;
+    margin: 10px;
 }
 h1 {
     background-color: blue;
     height: 150px;
+    padding-top: 10px;
 }
 input {
     background-color: green;
@@ -23,6 +27,12 @@ input {
 }
 form {
     background-color: yellow;
+    padding: 30px;
     width: 100px;
     height: 100px;
+}
+.text {
+    color: red;
+    width: 200px;
+    height: 50px;
 }
