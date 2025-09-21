@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+.box-default {
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new {
+    box-sizing: border-box;
+    /* Le estoy diciendo que es tamaño de la caja va a ser el border y el box */
+    padding: 25px;
+    border: 10px solid black;
+    /* a pesar de tener los mismos valores que la otra caja, no crece ya que esta seteado en el 100x100 que le asigne en .box, el box-default esta usando el box sizing default de la pagina */
+}
