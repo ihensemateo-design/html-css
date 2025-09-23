@@ -1,0 +1,28 @@
+
+body {
+    background-color: blue;
+}
+
+.box2 { /* Imagen */
+    margin: 200px 20px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP63h1SD4Ykuadr00MkZa8HnpYpakZa5UHAw&s"); /* Imagen */
+    background-size: 100%; /* Adapta la imagen al ancho total de la caja */
+    background-size: contain; /* Obliga al contenedor (caja en este caso) a que la imagen entre si o si */
+    background-size: cover; /* adapta la imagen a la resolucion que tiene la caja, usualmente se usa para un background-position center para lo que se adapte sea el medio de la foto */
+    background-position: center; /* MID, TOP, LEFT, RIGHT, BOTTOM o PX*/
+    background-repeat: none; /* que la foto no se repita */
+    background-attachment: fixed; /* es el efecto que la foto va pasando con el scrol */
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP63h1SD4Ykuadr00MkZa8HnpYpakZa5UHAw&s") top / cover center #0007; /*Es lo mismo que poner 1 a una las de arriba */
+}
+
+.box { /* Transparencia */
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #0007; /* el cuarto color le da la transparencia, con transparencia en negro se ve fachero */
+    position:absolute;
+    top: 0;
+}
