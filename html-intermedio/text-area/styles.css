@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+form{
+    background-color: #ededed;
+    padding: 20px 0;
+    max-width: 500px; /* Limito el tamaño del elemento */
+    margin:auto; /* Lo obligo a permanecer en el medio */
+    box-shadow: 0 0 35px #0006;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.form_input{
+    padding: 10px 20px;
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border:none;
+    border-left: 3px solid #999;
+    box-shadow: 0 0 25px #0001;
+    border-radius: 8px;
+}
+
+textarea{
+    min-width: 100%; /* lo fuerzo a no poder achicarlo mas del espacio de la caja */
+    resize: vertical; /* como se va a desplazar el elemento (none, horizontal,content, etc */
+    font-family: sans-serif;
+    min-height: 100px;
+}
