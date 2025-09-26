@@ -1,0 +1,43 @@
+<!-- LAS TABLAS SON FORMAS DE ORGANIZAR DATOS EN FILAS Y COLUMNAS, actualmente solo se usa para mostrar datos tabulares -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table></table>                  <!-- table ETIQUETA DE TABLA -->
+    <table>
+        <thead>                      <!-- Definimos el nombre de cada dato -->
+            <tr>
+                <th>Producto</th>      <!-- th Son los encabezador de cada columna -->
+                <th>Costo</th>
+                <th>Unidades</th>
+            </tr>
+        </thead>
+        <tbody>                      <!-- tbody Se usa para identar todos los productos o datos -->
+            <tr>                     <!-- tr Crea una fila (izquierda a derecha)-->
+                <td>X</td>      <!-- td Define celdas para las filas -->
+                <td>X</td>
+                <td>X</td>
+            </tr>
+            <tr>          
+                <td>fila 2</td>
+                <td>fila 2</td>
+                <td>fila 2</td>
+            </tr>
+        </tbody>              
+        <tfoot>                      <!-- Resumen -->   
+            <tr>          
+                <th>TOTAL</th>
+                <td colspan="2">2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+<!-- NO se usa para: Datos de usuario, tablas donde los datos no necesiten ester tabulados. -->
