@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h2>
+            formulario
+        </h2>
+        <!-- SELECT -->
+        <div class="form_input">Tipo de usuario
+            <label>
+            <select name="type-of-user">  <!--no trae opciones por defecto, tenemos que agregarlas-->
+                <option value="user1">Opción 1</option> 
+                <option value="user2">Opción 2</option>
+                <option value="user3">Opción 3</option>
+                <option value="user4">Opción 4</option> <!-- el valor del value es lo que va a recibir el servidor cuando alguien envie el formulario-->
+            </select>
+            </label>
+        </div>
+
+
+
+        <!-- DATALIST -->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente"> <!-- A diferencia del select, aca si tiene que haber un input -->
+            <datalist id="referente" name="type-of-user">  <!--no trae opciones por defecto, tenemos que agregarlas-->
+                <option value="user1">Opción 1</option> 
+                <option value="user2">Opción 2</option>
+                <option value="user3">Opción 3</option>
+                <option value="user4">Opción 4</option> <!-- Se puede sacar el value y va a aparecer solo las opciones o se puede sacar las opciones y van a aparecer los value, (la opcion puede usarse como descripcion del value) -->
+            </datalist>
+            </label>
+        </div>
+</body>
+</html>
