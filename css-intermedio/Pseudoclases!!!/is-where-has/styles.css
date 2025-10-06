@@ -1,0 +1,50 @@
+/* ----- :is ----- */
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+
+/* Forma correcta de hacerlo: El "is" agrupa los elementos*/
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+
+/* tambien funciona asi, pero tiene menos especifidad, se esta sobreescribiendo, ademas selecciona a todos los elementos 1,2 y3, no solo los que estan dentro de section */
+:is(.elemento1, .elemento2, .elemento3){
+    color: green;
+}
+
+
+/* ----- where ----- */
+/* ":where" funciona igual que is, pero no tiene especifidad, por lo tanto si hay otro estilo que afecte a esos elementos, el que va a ganar es el otro */
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: purple;
+}
+
+
+/* ----- :has ----- */
+/* ":has" Verifica que section tenga algo dentro, si section tiene dentro .elemento2 en caso de que lo tenga va a tener border negros, sino no */
+section:has(.elemento2) {
+    border: 2px solid black;
+}
+
+
+/* estamos modificando el ul que le siga al div, si es que alguno lo hace*/
+ul:has(+div) {
+background-color: green;
+}
+
+
+/* En caso de que funcione el label va a tener el color verde, si no funciona o se esta haciendo mal va a estar en rojo */
+label:has(input:valid){
+    color: green;
+}
+
+label:has(input:invalid){
+    color: red;
+}
+
+input{
+    color: inherit;
+}
