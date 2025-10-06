@@ -1,0 +1,81 @@
+/* Se accede a los pseudoelementos con "::"*/
+
+/*----- first-letter -----*/
+/* Selecciona la primer letra*/
+h1::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+/*----- first-line -----*/
+/* Selecciona la primer línea */
+div::first-line{
+    color: blue;
+    font-size: 20px;
+}
+
+/*----- before -----!!*/
+/* Inserta contenido antes del elemento seleccionado*/
+li::before {
+content: "Antes:  ";
+color: brown;
+}
+
+/*----- after -----!!*/
+/* Inserta contenido despues del elemento seleccionado*/
+li::after {
+    content: "   Despues";
+    color: burlywood;
+}
+
+
+/*----- selection -----*/
+/* Selecciona el texto seleccionado desplazando el mouse con click apretado*/
+h1::selection {
+    background-color: green;
+    color: white;
+}
+
+/*----- placeholder -----*/
+/* Selecciona el texto placeholder de un input*/
+input::placeholder{
+    color: red;
+    background-color: yellow;
+}
+
+/*----- marker -----*/
+/* Selecciona el marcador de una lista */
+li::marker{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin-top: 30px;
+}
