@@ -1,0 +1,33 @@
+
+/* HERENCIA */
+
+body /* Las propiedades se van heredando hasta que las cambie*/
+{
+    color: green;
+}
+
+
+/* inherit */
+h1 {
+    color: inherit; /* "inherit" significa que va a heredar el color mas cercano (por defecto lo hace) */
+}
+
+
+/* initial */
+p {
+    color: initial; /* "initial" significa que va a tomar el valor por defecto del navegador */
+}
+
+
+/* unset */
+div {
+    color: unset; /* "unset" significa que va a reestablecer el valor inicial */
+}
+
+
+/* revert */
+div {
+    color: revert; /* "revert" significa que va a reestablecer el valor del desarrollador y si no lo encuentra, al del navegador */
+}
+
+/* Esta bueno aplicarlo con font-family y con los links (a) */

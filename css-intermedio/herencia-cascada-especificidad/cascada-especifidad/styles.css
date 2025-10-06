@@ -1,0 +1,20 @@
+/* la cascada es el proceso para decidir qué regla tiene prioridad cuando hay conflictos entre varias declaraciones, va sobreescribiendo a los demas elementos existentes hasta que llegue al de mas prioridad. */
+
+/* la especifidad es el orden de prioridad que van a tener los elementos cuando existen conflictos del mismo nivel */
+
+#titulo[class="titulo"] /* Cambia la especifidad al darle un id, se le da prioridad al mas alto sin importal el orden  1/0/0 */
+{
+    color: green;
+}
+
+body .titulo /* Especifidad 0/1/1, le estoy dando especifidad haciendolo mas especifico*/
+{
+    color: red;
+}
+
+h1 /* Especifidad 0/0/1, pero al darle important esta sobreescribiendo a las demas */
+{
+    color: blue !important; /* !important es la mayor prioridad que se le puede dar a un elemento*/
+}
+
+/* ¡¡¡¡¡ Primero busca el rango de cascada (imagen), luego busca la especifidad para darle prioridad !!!!! ver la imagen del html */ 
