@@ -1,0 +1,66 @@
+img[src="../html-intermedio/carga-diferida/google.png"] {
+}
+
+/* --- Selector por atributo --- */
+
+img[src$="png"] /* El $ selecciona todas las imágenes que terminan en "png" */
+{ 
+}
+
+img[src^=google] /* El circunflejo "^" selecciona todas las imágenes que comienzan con "google" */
+{ 
+}
+
+
+
+/* --- Selector por descendiente o hijo directo --- */
+
+ul li /* Selecciona todos los elementos <li> que son descendientes de un <ul> */
+{
+    color: blue;
+}
+
+ul strong /* Selecciona todos los elementos <strong> que son descendientes de un <ul> */
+{
+    color: red;
+}
+
+
+
+/* --- Selector de hijo directo --- */
+
+ul > li /* El símbolo ">" selecciona todos los elementos <li> que son hijos directos de un <ul> */
+{
+    background-color: lightgray;
+}
+
+ul > li > strong /* voy moviendome hacia adentro de la jerarquia */
+{
+    color: blue;
+}
+
+
+
+
+/* --- Selector de hermano adyacente + --- */
+
+ul + li /* El símbolo "+" selecciona solo el primer <li> que sigue inmediatamente a un <ul> */
+{
+    color: green;
+}
+
+/* --- Selector de hermano general ~ --- */
+
+img ~ li /* El símbolo "~" selecciona a todos los <li> que vengan despues de un <ul> */
+{
+    font-weight: bold;
+    color: orange;
+}
+
+img ~ ul li /* El símbolo "~" selecciona a todos los <li> que vengan despues de un <ul> hermano de img */
+{
+    font-weight: bold;
+    color: purple;
+}
+
+
