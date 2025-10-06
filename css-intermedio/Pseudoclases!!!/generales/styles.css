@@ -1,0 +1,93 @@
+/* Las Pseudoclases nos permiten seleccionar UN ESTADO ESPECIFICO de un elemento ( MDN pseudoclases en google )*/
+
+
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+/* ":hover" Modificamos el h1 para cuando el mouse este encima */
+h1:hover
+{
+    color: #000;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+/* ":active" Modificamos el h1 para cuando el mouse este presionado sobre el elemento */
+h1:active
+{
+    color: #f00;
+    background-color: #ff0;
+}
+
+
+/* Selecciono el primer elemento*/
+li:first-child
+{
+    color: red;
+}
+
+/* Selecciono el ultimo elemento*/
+li:last-child
+{
+    color: blue;
+}
+
+/* Selecciono el segundo elemento cambiando el numero*/
+li:nth-child(2)
+{
+    color: green;
+}
+
+/* Cada 2 elementos modifica 1*/
+li:nth-child(2n)
+{
+    color: orange;
+    background-color: #ccc;
+}
+
+/* Solo selecciona la li ignorando los elementos que tenga en el medio a la hora de contar*/
+li:nth-of-type(2n)
+{
+}
+
+/* Selecciona todos los elementos que NO tengan la clase .excluir pero esten dentro de .lista */
+.lista li:not(.excluir)
+{text-decoration: underline;
+}
+
+/* ":empty" Selecciona el elementos solo en caso de que esten vacios, si tiene algo deja de tener las propiedades (Es util para que solo cuando se escriba aparezcan los bordes); (Probar escribiendo el el div)*/
+div:empty {
+    border: none;
+}
+
+div{
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+/* Links */
+/* modifico el elemento no visitado*/
+a:link{
+    color: red;
+}
+
+/* modifico el elemento visitado*/
+a:visited{
+    color: green;
+}
+
+/* inputs */
+/* Modifico el elemento cuando es valido*/
+input:valid{
+    color: blue;
+}
+
+/* Modifico el elemento cuando es invalido*/
+input:invalid{
+    color: red;
+}
