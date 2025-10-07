@@ -1,0 +1,104 @@
+a{
+    display: inline; /* En linea */
+}
+
+a{
+    display: block; /* Acabo de convertir a "a" en un bloque, es desir que ocupa todo el hancho disponible, por lo tanto crea otra linea para el segundo */
+}
+
+a{
+    display: inline-block; /* En linea pero permite el uso de padding y margin */
+}
+
+a{
+    display: none; /* Desaparece, no vuelve a estar por defecto, simplemente no se representa visualmente en la pagina, los elementos adyacentes lo ignoran, totalmente desactivado */
+}
+
+
+
+/* Los elementos como los links no suelen permitir el uso de pading y margin, por lo tanto utilizamos al propiedad DISPLAY para que funcionen*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+}
+
+nav {
+    background-color: #48e;
+    margin: 50px;
+}
+
+.nav__list{
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item{
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav__item:hover{
+    background-color: aqua;
+}
+
+.nav__link{
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.enlace{
+    display: block;
+    margin: 10px;
+}
