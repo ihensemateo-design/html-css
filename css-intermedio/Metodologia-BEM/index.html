@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> LISTA </h1>
+    <ul class="list"> <!-- Este es el Bloque -->
+        <li class="list__item">1</li> <!-- Este es el ELEMENTO (__) -->
+        <li class="list__item">2</li>
+        <li class="list__item">3</li>
+        <li class="list__item  item--first">4</li> <!-- Esta es la MODIFICACIÓN (--), para hacer un cambio en especifico -->
+    </ul>
+
+    <ul class="list list--vieja"> <!-- Estoy modificando un bloque en especifico -->
+        <li class="list__item item--first">1</li> <!--  -->
+        <li class="list__item">2</li>
+        <li class="list__item">3</li>
+        <li class="list__item">4</li>
+    </ul>
+</body>
+</html>

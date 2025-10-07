@@ -1,0 +1,31 @@
+/* BEM es una metodología para escribir CSS más ordenado, escalable y fácil de mantener.
+Su nombre viene de:
+
+BEM = Block – Element – Modifier */
+
+/* Bloque (Block): Es un componente independiente, como una tarjeta, menú, botón, header, etc.
+Representa una parte funcional de la página que puede reutilizarse. */
+
+/* Element:(Elemento): Es una parte dentro del bloque que depende de él.
+Por convención, se separa con dos guiones bajos __ */
+
+/* Modifier (Modificador): Sirve para cambiar la apariencia o comportamiento de un bloque o elemento.
+Se separa con dos guiones medios -- */
+
+
+/* Los bloques deben nombrarse con su funcionalidad*/
+
+/* Los elementos utilizan el nombre del bloque con __ seguido de lo que es el elemento "item" EJ:"list__item", ¡¡ lo que estoy definiendo es un item que pertenece a una lista !!*/
+
+.list__item{
+    color: blue;
+}
+
+.item--first{
+    color: red;
+}
+
+.list--vieja{
+    background-color: lightgray;
+    opacity: 0,15;
+}
