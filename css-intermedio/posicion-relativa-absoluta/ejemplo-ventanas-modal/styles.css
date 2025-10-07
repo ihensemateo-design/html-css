@@ -3,12 +3,18 @@ body{
 }
 
 /* La etiqueta dialog es para crear las ventanas modal */
+/* En este caso no es necesario poner una posicion aboluta porque en realidad dialog ya la trae, pero esta por la practica*/
 dialog{
     background-color: #0009;
     width: 100vw;
     height: 100vh;
     position: absolute;
     box-sizing: border-box;
+}
+
+/* Investigar esto, es la forma correcta de darle color al fondo*/
+dialog::backdrop{
+    background-color: #0009;
 }
 
 .modal__content{
