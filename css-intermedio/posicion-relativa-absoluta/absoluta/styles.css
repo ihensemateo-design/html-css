@@ -1,0 +1,79 @@
+/* ¡¡ La position abolute ya no ocupa lugar en la pagina !! */
+/* El punto de referencia no es relativo a si mismo, sino a la etiqueta html, por lo tanto rompe su propio contenedor o el de sus padres para posicionarse dentro de la totalidad del archivo, siendo su posicion unicial (0,0,0,0) El margen superior izquierdo */
+
+.box--blue{
+    position: absolute;
+    bottom: 0px; /* El elmento se esta moviendo a partir de los limites de su padre, NO DESDE SU PROPIA POSICION!! (El elemento padre debe de tener asignada una posicion relativa) */
+    right: 0px;
+}
+
+.container{
+    position: relative; /* Con esto hacemos que el punto de referencia de los elementos hijos (Las cajas) sea el contenedor y no la pagina */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box--blue{
+    background-color: blue;
+}
+
+.box--green{
+    background-color: green;
+}
+
+.container{
+    border: 3px solid black;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
