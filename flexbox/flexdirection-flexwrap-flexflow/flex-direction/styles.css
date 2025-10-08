@@ -1,0 +1,66 @@
+/* El display flex es el valor que vuelve flexibles a los elementos*/
+.flexbox{
+    display: flex;
+
+    flex-direction: row-reverse; /*row | row-reverse | column | column-reverse*/
+    /* Son la direcciones en las que se puede alinear los elementos, estoy moviendo el "MAIN AXIS" (eje principal), si no defino tamaño va a ocupar todo el "CROS AXIS"(eje cruzado) !!!!*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child{
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}

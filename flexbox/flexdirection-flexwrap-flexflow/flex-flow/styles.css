@@ -1,0 +1,55 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex-flow: row wrap; /* flex-direction | flex-wrap */ /* Estoy abreviando las anteriores */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-item{
+    width: 150px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child{
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: green;
+}
+
+body, div{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+}

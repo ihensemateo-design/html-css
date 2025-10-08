@@ -1,0 +1,63 @@
+/* Flex Wrap nos permite controlar el comportamiento de los flex-items una vez que el espacio que tenemos en el contenedor es insuficiente para esos elementos, se adapta para que no cambien su tamaño */
+
+/* Se le da a la caja contenedora, no a los hijos*/
+
+.flexbox{
+    display: flex;
+    flex-direction: row; /* Tendrian que ir hacia la derecha pero al no tener espacio la propiedad flex-wrap: wrap, los hace bajar para tener espacio */
+
+    flex-wrap: wrap; /* nowrap; wrap; wrap-reverse */
+/* Por defecto es nowrap, Los ítems se estiran o se salen del contenedor si no hay espacio suficiente. */
+/* wrap: Los ítems se acomodan automáticamente en varias filas (como si fuera un “renglón nuevo”). */
+/* wrap-reverse Los ítems que no entran saltan hacia arriba en lugar de abajo. */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-item{
+    width: 150px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+}
+
+.flex-item:first-child{
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
