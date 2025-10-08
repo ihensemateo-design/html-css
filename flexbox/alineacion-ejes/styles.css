@@ -1,0 +1,104 @@
+    /*justify-content alinea los elementos en el "MAIN AXIS"(eje principal)*/
+
+.flexbox{
+    display: flex;
+
+    justify-content: space-evenly; /* start | end | center | space-between | space-around | space-evenly*/ 
+
+    /* Start: Los elementos se agrupan al inicio del contenedor*/
+    /* End: Los elementos se agrupan al final del contenedor*/
+    /* Center: Los elementos se agrupan en el centro del contenedor*/
+    /* Space-between: El primer elemento se alinea al inicio y el último al final, los demás se distribuyen equitativamente entre ellos*/
+    /* Space-around: Los elementos se distribuyen equitativamente, con espacio alrededor de cada elemento. El espacio entre los elementos es el doble del espacio entre los elementos y los bordes del contenedor*/
+    /* Space-evenly: Los elementos se distribuyen equitativamente con el mismo espacio entre ellos y los bordes del contenedor*/
+}
+
+
+
+/* align-items alinea los elementos en el "CROSS AXIS"(eje transversal)*/
+
+.flexbox{
+    align-items: center; /* flex-start | flex-end | center | baseline | stretch */
+
+/* Flex-start: Los elementos se alinean al inicio del contenedor*/
+/* Flex-end: Los elementos se alinean al final del contenedor*/
+/* Center: Los elementos se alinean en el centro del contenedor*/
+/* Baseline: Los elementos se alinean en la línea base del contenedor*/
+/* Stretch: Los elementos se estiran para llenar el contenedor (valor por defecto)*/
+}
+
+
+/* align-content alinea las filas en el "CROSS AXIS"(eje transversal)*/
+.flexbox{
+    align-content: stretch; /* flex-start | flex-end | center | space-between | space-around | stretch */
+
+/* Flex-start: Las filas se alinean al inicio del contenedor*/
+/* Flex-end: Las filas se alinean al final del contenedor*/
+/* Center: Las filas se alinean en el centro del contenedor*/
+/* Space-between: La primera fila se alinea al inicio y la última al final, las demás se distribuyen equitativamente entre ellas*/
+/* Space-around: Las filas se distribuyen equitativamente, con espacio alrededor de cada fila. El espacio entre las filas es el doble del espacio entre las filas y los bordes del contenedor*/
+/* Stretch: Las filas se estiran para llenar el contenedor (valor por defecto)*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No tocar, solo ilustrativo*/
+.flex-item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child{
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 400px;
+}
+
