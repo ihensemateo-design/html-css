@@ -1,0 +1,77 @@
+/* "Order" Cambia el orden de los elementos, solo de manera visual, el espacio fisico dentro de la pagina sigue siendo el inicial */
+
+.flex--item1{
+    order: 2;
+}
+
+.flex--item2{
+    order: 1;
+}
+
+.flex--item3{
+    order: 4;
+}
+
+.flex--item4{
+    order: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No tocar, solo ilustrativo*/
+.flex__item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex__item:first-child{
+    background-color: blue;
+}
+
+.flex__item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
