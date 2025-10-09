@@ -40,6 +40,19 @@
 /* Stretch: Las filas se estiran para llenar el contenedor (valor por defecto)*/}
 
 
+/* align-self alinea un elemento que tiene definida la propiedad align items dentro del contenedor, lo hace de forma individual y debe de darse al hijo, no al padre*/ 
+/* Esta funciona solo cuando tenemos definida la propiedad align-items*/
+.flexbox--item1{
+    align-self: center; /* auto | flex-start | flex-end | center | baseline | stretch */
+
+/* Auto: El elemento hereda el valor de align-items del contenedor padre (valor por defecto)*/
+/* Flex-start: El elemento se alinea al inicio del contenedor*/
+/* Flex-end: El elemento se alinea al final del contenedor*/
+/* Center: El elemento se alinea en el centro del contenedor*/
+/* Baseline: El elemento se alinea en la línea base del contenedor*/
+/* Stretch: El elemento se estira para llenar el contenedor*/
+}
+
 
 
 

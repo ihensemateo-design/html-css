@@ -1,0 +1,76 @@
+
+/* "Grow" Controla cuánto puede crecer el ítem si hay espacio libre en el contenedor, Cuanto más alto, más espacio adicional ocupa comparado con los demás.
+Valor por defecto: 0 (no crecerá) */
+.flex__item:first-child{
+    flex-grow: 1;
+}
+
+/* El ultimo item va a crecer 3 veces más que el primero si amplio la pagina !! */
+.flex__item:last-child{
+    flex-grow: 3;
+}
+
+/* Si yo tengo flex-grow 1 0 0 3 voy a tener 4 espacios totales que se van a repartir con los valores establecidos, 1 0 0 3 partes */
+
+/* Solo funciona si tengo espacio disponible*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No tocar, solo ilustrativo*/
+.flex__item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex__item:first-child{
+    background-color: blue;
+}
+
+.flex__item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,68 @@
+/* Flex-basis define el TAMAÑO BASE de los elementos */
+.flex__item{
+    flex-basis: 0;
+    min-width: 100px;
+}
+/* Es recomendable definir en 0 el flex-basis y definirle un valor de min-width*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No tocar, solo ilustrativo*/
+.flex__item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex__item:first-child{
+    background-color: blue;
+}
+
+.flex__item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+    flex-flow: row wrap;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

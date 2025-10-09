@@ -1,0 +1,1 @@
+Estas propiedades se aplican sobre la caja principal (caja flexible), NO sobre los elementos!!!

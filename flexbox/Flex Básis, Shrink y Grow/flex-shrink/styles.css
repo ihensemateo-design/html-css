@@ -1,0 +1,78 @@
+/* Flex Shrink  definimos hasta cuanto se van a poder reducir*/
+.flex__item{
+    flex-shrink: 0;
+}
+
+/* El primer item se va a poder reducir 3 veces mas que los demas */
+.flex--item1{
+    flex-shrink: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No tocar, solo ilustrativo*/
+.flex__item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex__item:first-child{
+    background-color: blue;
+}
+
+.flex__item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    border: 2px solid black;
+    margin: 20px;
+    flex-flow: row;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.flex__item:first-child{
+    flex-grow: 1;
+}
+
+
+.flex__item:last-child{
+    flex-grow: 3;
+}
