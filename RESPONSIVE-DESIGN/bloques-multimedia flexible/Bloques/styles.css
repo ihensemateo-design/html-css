@@ -1,0 +1,79 @@
+/* QUE RECURSOS UTLIZO PARA QUE MIS BLOQUES SEAN FLEXIBLES CON FLEXBOX (simplemente evitar valores fijos)*/
+
+.bloque{
+/* Establesco un minimo y un maximo al tamaño, no lo dejo fijo*/
+    min-width: 100px;
+    max-width: 200px;
+
+/* No se suele utilizar un height*/
+    min-height: auto;
+
+/* Para que los bloques se comporten como elementos en linea */
+    display: inline-block;
+
+/* Flex: 1 0 0*/
+    flex-grow: 1; /* Cuánto puede crecer el elemento si sobra espacio en el contenedor; 0: no crece, 1: puede crecer para ocupar espacio libre.*/
+
+    flex-shrink: 0; /* Cuánto puede reducirse el elemento si falta espacio en el contenedor; 0: no se reduce, 1: puede reducirse para ajustarse al espacio disponible.*/
+
+    flex-basis: 0; /* Tamaño inicial del elemento antes de que se aplique el crecimiento o la reducción; puede ser un valor fijo (como 100px) o 'auto' para usar el tamaño natural del contenido.*/
+}
+
+
+
+.flexbox{
+    display: flex;
+
+    /*¨Para que los bloques bajen de linea si no caben en la misma*/
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloque{
+    background-color: red;
+    margin: 4px;
+    padding: 10px;
+    display: flex;
+}
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+}
+.flexbox{
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+}

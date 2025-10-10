@@ -1,0 +1,49 @@
+/* Hacer que las imágenes sean flexibles (no utilizar valores fijos, solo minimos y maximos) */
+
+img{
+/* Forma correcta de hacer que una imagen sea flexible */
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Forma correcta de hacer flexible un video: Mantener la relacion de aspecto 16/9 y que se adapte al contenedor */
+.container{
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+}
