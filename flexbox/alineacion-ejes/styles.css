@@ -3,7 +3,7 @@
 .flexbox{
     display: flex;
 
-    justify-content: space-evenly; /* start | end | center | space-between | space-around | space-evenly*/ 
+    justify-content: space-between; /* start | end | center | space-between | space-around | space-evenly*/ 
 
     /* Start: Los elementos se agrupan al inicio del contenedor*/
     /* End: Los elementos se agrupan al final del contenedor*/
@@ -110,7 +110,6 @@ body{
 
 .flexbox{
     border: 2px solid black;
-    margin: 20px;
     flex-flow: row wrap;
     height: 400px;
 }

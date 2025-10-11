@@ -51,7 +51,7 @@ li:nth-child(2n)
 }
 
 /* Solo selecciona la li ignorando los elementos que tenga en el medio a la hora de contar*/
-li:nth-of-type(2n)
+li:nth-of-type(3n)
 {
 }
 

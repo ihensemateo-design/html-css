@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos SRCSET y SIZES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Le estoy diciendo a la pagina que si el usuario esta viendo en 400px cargue la imagen con pocos pixeles (google small), si esta viendo en 600px la media y en 1000px o mas la de mayor calidad. (Se usa para que la imagen no consuma recursos innecesarios)-->
+    <img src="google.png" srcset="google-small.png 400w, google-medium.png 600w, google.png 1000w"
+    sizes="(max-width: 700px) 360px, 900px"> <!-- Le estoy diciendo al navegador que en pantallas que son menores a 700px de widht que inserte una imagen de 360px, pero para pantallas mas grandes que use una de 900px-->
+    <!-- Sizes le dice al navegador o le da una recomnedacion sobre cuales serian los maximos de altura que puede trabajar -->
+</body>
+</html>
