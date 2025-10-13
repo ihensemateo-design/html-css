@@ -1,3 +1,5 @@
+/* Sintaxis: @media "not/only" mediatype "and" ("expresion") */
+
 @media print {
     /* Estoy haciendo que solo al imprimir cambie el tamaño de la letra*/
     body{
