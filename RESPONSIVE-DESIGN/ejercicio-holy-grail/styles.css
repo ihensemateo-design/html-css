@@ -107,7 +107,8 @@ footer {
 }
 
 
-
+/* Estoy usando la metodologia Desktop First, ya que diseñe la pagina para escritorio y se adapta si entras en telefono*/
+/* Para hacerla Movile First Los valores deberian ser min-widht e intercambiar los actuales con los de media*/
 @media screen and (max-width: 600px){
     aside:last-child{
         display: none;

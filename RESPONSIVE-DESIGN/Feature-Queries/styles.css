@@ -1,0 +1,24 @@
+/* Le estoy diciendo que el navegador utilice este color si es que lo soporta*/
+@supports (color:oklch(30% 0.2 30)){
+    body{
+        color:oklch(80% 0.2 30)
+    }
+}
+
+
+/* Aplicacion real, si a el navegador le funciona grid va a tener unas propiedades, si no funciona greed va a tener otras*/
+@supports (display:grid){
+    body{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@supports not (display:grid){
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
