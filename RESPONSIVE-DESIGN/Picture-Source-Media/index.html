@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture, Source y Media</title>
+</head>
+<body>
+    <!-- Todo lo que este dentro de esta etiqueta van a ser fuentes para que elija y determine cual va a mostrar en base a las especificaciones del usuario y los px de las imagenes que le estoy dando (Se coloca de mas chica a mas grande) -->
+    <picture>
+        <source media="(max-width: 600px)" srcset="../Atributos-SRCSET-SIZES/google.png"> <!-- Para pantallas con una resolucion menos a 600px se muestra esta imagen-->
+        <source media="(max-width: 800px)" srcset="../Atributos-SRCSET-SIZES/google-medium.png"> <!-- Para pantallas con una resolucion menos a 800px se muestra esta imagen-->
+        <img src="../Atributos-SRCSET-SIZES/google.png">
+    </picture>
+    <!-- Se suele utilizar para poner un formato mejor a .png al inicio y luego en formato .png por si el navegador no soporta el primero, que cargue el segundo-->
+</body>
+</html>

@@ -1,0 +1,16 @@
+@media print {
+    /* Estoy haciendo que solo al imprimir cambie el tamaño de la letra*/
+    body{
+        font-size: 60pt;
+    }
+}
+
+/* le estoy dando la condicion de que esto pase solo si es una pantalla (screen); "and" lo que hace es conectar condiciones*/
+/* Si es una pantalla y tiene un max-width de 500px va a aplicar esto, sino no*/
+@media screen and (max-width:500px){
+    body{
+        font-size: 60pt;
+        background-color: black;
+        color: white;
+    }
+}
