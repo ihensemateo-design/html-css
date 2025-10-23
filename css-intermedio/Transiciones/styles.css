@@ -1,0 +1,137 @@
+.flex-item{
+    /* Selecciono que propiedad quiero que transicione, en este caso el color */
+    transition-property: color, background-color;
+
+    /* Cuanto quiero que dure, en este caso un segundo*/
+    transition-duration: 3s;
+
+    /* Cuanto va a tardar en hacerse la transicion */
+    transition-delay: 0s;
+    color: red;
+}
+
+.flex-item:hover{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: black;
+}
+
+
+
+.box{
+    transition-property: background-color, left;
+    transition-duration: 1s;
+    position: relative;
+    left: 0;
+
+    /* Controla la direccion y la intensidad de la animacion, https://cubic-bezier.com/#.17,.67,.83,.67 */
+    transition-timing-function: linear;
+}
+
+body:hover .box {
+    left: 200px;
+    background-color: blue;
+}
+
+/* Transition: "property", "Duration" "Estilo de animacion", "dylay" 
+EJ: Transition: color 3s linear 0s*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-item{
+    width: 180px;
+    background-color: red;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child{
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: green;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.flexbox{
+    border: 2px solid black;
+    flex-flow: row wrap;
+    height: 400px;
+}
+
+.flexbox{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin-top: 100px;
+    text-align: center;
+}
